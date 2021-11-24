@@ -5,6 +5,8 @@
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" type="text/css" href="styles.css">
+   <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
    <script src="https://kit.fontawesome.com/e8e9a62ae1.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -13,87 +15,87 @@
     <a href="index.html"><img src="images/ohmyfood@2x.svg" alt="logo" id="logotop"/></a>
    </header>
    <main>
-       <section>
-            <form method="post" action="traitement.php" id="recherche">
+       <section class="intro">
+            <form method="post" action="traitement.php" class="intro__search">
                 <i class="fas fa-map-marker-alt"></i>
-                <input id="search" type="text" name="destination" value="Paris, Belleville" placeholder="Ville"/>
+                <input class="intro__zonetext" type="text" name="destination" value="Paris, Belleville" placeholder="Ville"/>
+                <h1 class="intro__title">Réservez le menu qui vous convient</h1>
+                <p class="intro__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+                <input class="intro__btn" type="submit" value="Explorer nos restaurants"/>
             </form>
-            <div>
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <button class="btn" type="button">Explorer nos restaurants</button>
-            </div>
        </section>
-       <section>
-            <h2>Fonctionnement</h2>
-            <div>
-                <p>1</p>
+       <section class="pres">
+            <h2 class="pres__title">Fonctionnement</h2>
+            <div class="pres__bloc">
+                <p class="pres__nb">1</p>
                 <i class="fas fa-mobile-alt"></i>
-                <p>Choisissez un restaurant</p>
+                <p class="pres__text">Choisissez un restaurant</p>
             </div>
-            <div>
-                <p>2</p>
+            <div class="pres__bloc">
+                <p class="pres__nb">2</p>
                 <i class="fas fa-list-ul"></i>
-                <p>Composez votre menu</p>
+                <p class="pres__text">Composez votre menu</p>
             </div>
-            <div>
-                <p>3</p>
+            <div class="pres__bloc">
+                <p class="pres__nb">3</p>
                 <i class="fas fa-store"></i>
-                <p>Dégustez au restaurant</p>
+                <p class="pres__text">Dégustez au restaurant</p>
             </div>
        </section>
-       <section>
-            <h2>Restaurants</h2>
-            <a href="#" class="carteresto">
-                <img src="images/r1.jpg" alt="resto1" class="imgresto">
-                <p>Nouveau</p>
-                <div class="txtresto">
-                    <h3>La palette du goût</h3>
-                    <h4>Ménilmontant</h4>
-                    <button class="fav" type="button">
+       <section class="resto">
+            <h2 class="resto__title">Restaurants</h2>
+            <a href="#" class="resto__card">
+                <img src="images/r1.jpg" alt="resto1" class="resto__img">
+                <p class="resto__new">Nouveau</p>
+                <div class="resto__text">
+                    <h3 class="resto__name">La palette du goût</h3>
+                    <h4 class="resto__loc">Ménilmontant</h4>
+                    <button class="resto__fav" type="button">
                         <i class="fas fa-heart"></i>
                     </button>
                 </div>
             </a>
-            <a href="#" class="carteresto">
-                <img src="images/r2.jpg" alt="resto2" class="imgresto">
-                <p>Nouveau</p>
-                <div class="txtresto">
-                    <h3>La note enchantée</h3>
-                    <h4>Charonne</h4>
-                    <button class="fav" type="button">
+            <a href="#" class="resto__card">
+                <img src="images/r2.jpg" alt="resto2" class="resto__img">
+                <p class="resto__new">Nouveau</p>
+                <div class="resto__text">
+                    <h3 class="resto__name">La note enchantée</h3>
+                    <h4 class="resto__loc">Charonne</h4>
+                    <button class="resto__fav" type="button">
                         <i class="fas fa-heart"></i>
                     </button>
                 </div>
             </a>
-            <a href="#" class="carteresto">
-                <img src="images/r3.jpg" alt="resto3" class="imgresto">
-                <div class="txtresto">
-                    <h3>A la française</h3>
-                    <h4>Cité Rouge</h4>
-                    <button class="fav" type="button">
+            <a href="#" class="resto__card">
+                <img src="images/r3.jpg" alt="resto3" class="resto__img">
+                <div class="resto__text">
+                    <h3 class="resto__name">A la française</h3>
+                    <h4 class="resto__loc">Cité Rouge</h4>
+                    <button class="resto__fav" type="button">
                         <i class="fas fa-heart"></i>
                     </button>
                 </div>
             </a>
-            <a href="#" class="carteresto">
-                <img src="images/r4.jpg" alt="resto4" class="imgresto">
-                <div class="txtresto">
-                    <h3>Le délice des sens</h3>
-                    <h4>Folie-Méricourt</h4>
-                    <button class="fav" type="button">
+            <a href="#" class="resto__card">
+                <img src="images/r4.jpg" alt="resto4" class="resto__img">
+                <div class="resto__text">
+                    <h3 class="resto__name">Le délice des sens</h3>
+                    <h4 class="resto__loc">Folie-Méricourt</h4>
+                    <button class="resto__fav" type="button">
                         <i class="fas fa-heart"></i>
                     </button>
                 </div>
             </a>
        </section>
    </main>
-   <footer>
-       <img src="images/ohmyfood@2x.svg" alt="logo" id="logobot"/>
-       <a href="#" class="footer"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
-       <a href="#" class="footer"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
-       <a href="#" class="footer">Mentions légales</a>
-       <a href="mailto:contact@ohmyfood.fr" class="footer">Contact</a>
+   <footer class="footer">
+       <h2 class="footer__title">ohmyfood</h2>
+       <ul class="footer__list">
+          <li class="footer__link"><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>  
+          <li class="footer__link"><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>  
+          <li class="footer__link"><a href="#">Mentions légales</a></li>  
+          <li class="footer__link"><a href="mailto:contact@ohmyfood.fr" class="footer">Contact</a></li>
+        </ul>
    </footer>
 </body>
 </html>
