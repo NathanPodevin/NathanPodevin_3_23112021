@@ -1,0 +1,7 @@
+@mixin bouton_principaux {
+    background: linear-gradient(to bottom right, $color-secondary, 40%, $color-primary);
+    color: #fff;
+    border-radius: 100px;
+    border: none;
+    padding: 10px 10px 10px 10px;
+}
