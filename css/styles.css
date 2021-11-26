@@ -42,8 +42,12 @@ h1 {
 }
 
 .intro__btn {
-  background: linear-gradient(to bottom right, #FF79DA, 30%, #9356DC);
+  background: linear-gradient(172deg, #FF79DA, 45%, #9356DC);
   color: #fff;
+  width: 14rem;
+  height: 3.2rem;
+  font-size: 1rem;
+  font-weight: 450;
   border-radius: 100px;
   border: none;
   padding: 10px 10px 10px 10px;

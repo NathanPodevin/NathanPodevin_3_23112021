@@ -1,6 +1,10 @@
 @mixin bouton_principaux {
-    background: linear-gradient(to bottom right, $color-secondary, 30%, $color-primary);
+    background: linear-gradient(172deg, $color-secondary, 45%, $color-primary);
     color: #fff;
+    width: 14rem;
+    height: 3.2rem;
+    font-size: 1rem;
+    font-weight: 450;
     border-radius: 100px;
     border: none;
     padding: 10px 10px 10px 10px;
@@ -9,4 +13,8 @@
 
 @mixin bloc_shadow {
     box-shadow: 0px 0px 5px rgb(174, 174, 174);
+}
+
+@mixin bloc-padding {
+    padding: 0px 10px 0px 10px;
 }
