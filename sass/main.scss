@@ -1,9 +1,15 @@
 // Variables //
-@import "./utils/variables";
+@import "./Utils/variables";
+// Mixins // 
+@import "./Utils/mixins.scss";
 
 // Base //
 @import "./Base/rules";
 @import "./Base/font";
 
 // Layout //
-@import "./layout/header";
+@import "./Layout/header";
+@import "./Layout/introform";
+
+// Components //
+@import "./Components/boutons";

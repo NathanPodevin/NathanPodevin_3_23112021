@@ -1,7 +1,12 @@
 @mixin bouton_principaux {
-    background: linear-gradient(to bottom right, $color-secondary, 40%, $color-primary);
+    background: linear-gradient(to bottom right, $color-secondary, 30%, $color-primary);
     color: #fff;
     border-radius: 100px;
     border: none;
     padding: 10px 10px 10px 10px;
+    @include bloc_shadow;
+}
+
+@mixin bloc_shadow {
+    box-shadow: 0px 0px 5px rgb(174, 174, 174);
 }
