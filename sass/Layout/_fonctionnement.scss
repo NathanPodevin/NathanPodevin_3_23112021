@@ -1,0 +1,50 @@
+.pres {
+    padding: 50px 20px 50px 40px;
+    &__title {
+        margin: 0px 0px 0px -15px;
+    }
+    &__bloc {
+        display: flex;
+        height: 4rem;
+        background: $color-background;
+        @include bloc_shadow;
+        border-radius: 15px;
+        margin: 25px 0px 25px 0px;
+        &:hover {
+            background: strong_lighten($color: $color-primary);
+            & i:hover{
+                color: $color-primary;
+            }
+        }
+    }
+    &__nb {
+        color: #fff;
+        background: $color-primary;
+        border-radius: 100%;
+        padding: 5px 10px 5px 10px;
+        justify-content: space-around;
+        margin-left: -15px;
+        height: 19px;
+    }
+    & i {
+        margin: auto 15px auto 20px;
+        color: rgb(129, 129, 129);
+        width: 20px;
+    }
+    &__text {
+        color: black;
+        font-size: 0.9rem;
+        font-weight: 450;
+        margin: auto auto auto 0px;
+    }
+}
+
+.fa-mobile-alt
+{
+    font-size: 1.2rem;
+}
+
+.fa-store
+{
+    font-size: 0.9rem;
+}
