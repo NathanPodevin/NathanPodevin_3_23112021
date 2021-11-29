@@ -1,7 +1,7 @@
-@function lighten ($color){
+@function lighten_clr ($color){
     $hue: hue($color);
     $sat: 100%;
     $light: 75%;
-    $lighten: hsl($hue, $sat, $light);
-    @return $color;
+    $lighten_clr: hsl($hue, $sat, $light);
+    @return $lighten_clr;
 }
