@@ -5,3 +5,11 @@
     $lighten_clr: hsl($hue, $sat, $light);
     @return $lighten_clr;
 }
+
+@function strong_lighten ($color){
+    $hue: hue($color);
+    $sat: 100%;
+    $light: 95%;
+    $strong_lighten: hsl($hue, $sat, $light);
+    @return $strong_lighten;
+}
