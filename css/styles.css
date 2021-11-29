@@ -37,7 +37,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 .intro__title {
   width: 80%;
