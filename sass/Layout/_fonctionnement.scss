@@ -1,0 +1,24 @@
+.pres {
+    padding: 60px 20px 60px 20px;
+    &__title {
+        margin: 0px;
+    }
+    &__bloc {
+        display: flex;
+        background: $color-background;
+        @include bloc_shadow;
+        border-radius: 15px;
+        margin: 20px 0px 20px 0px;
+    }
+    &__nb {
+        color: #fff;
+        background: $color-primary;
+        border-radius: 100%;
+        padding: 5px 10px 5px 10px;
+        justify-content: space-around;
+    }
+    &__text {
+        font-size: 1rem;
+        font-weight: 450;
+    }
+}
