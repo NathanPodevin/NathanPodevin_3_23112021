@@ -1,5 +1,7 @@
 // Variables //
 @import "./Utils/variables";
+// Functions //
+@import "./Utils/functions.scss";
 // Mixins // 
 @import "./Utils/mixins.scss";
 
@@ -10,6 +12,7 @@
 // Layout //
 @import "./Layout/header";
 @import "./Layout/introform";
+@import "./Layout/fonctionnement";
 
 // Components //
 @import "./Components/boutons";
