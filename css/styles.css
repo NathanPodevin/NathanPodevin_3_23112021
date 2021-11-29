@@ -1,19 +1,121 @@
-/* Error: Plain CSS functions don't support keyword arguments.
- *    ,
- * 13 |         background: lighten_clr($color: $color-primary);
- *    |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   sass\Utils\mixins.scss 13:21       bouton-principaux()
- *   sass\Components\_boutons.scss 2:5  @import
- *   sass\main.scss 15:9                root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Plain CSS functions don't support keyword arguments.\a    \2577 \a 13 \2502          background: lighten_clr($color: $color-primary);\d\a    \2502                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\Utils\\mixins.scss 13:21       bouton-principaux()\a   sass\\Components\\_boutons.scss 2:5  @import\a   sass\\main.scss 15:9                root stylesheet";
+body {
+  margin: 0px;
 }
+body a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Roboto", "Arial", "Comic Sans MS", "Georgia", "Trebuchet MS", "Verdena";
+}
+
+h1 {
+  font-family: "Shrikhand", "Roboto", "Arial", "Comic Sans MS", "Georgia", "Trebuchet MS", "Verdena";
+}
+
+.header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  width: 100%;
+}
+.header__logo h1 {
+  font-size: 1.8rem;
+  color: black;
+  margin: 15px 0px 0px 0px;
+  text-align: center;
+}
+
+.intro {
+  background-color: #f1f1f1;
+}
+.intro__form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.intro__title {
+  width: 80%;
+  margin-bottom: 0px;
+}
+.intro__text {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+  margin-top: 12px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  width: 100%;
+  height: 3.2rem;
+  background-color: #e2e2e2;
+  box-shadow: inset 0px 2px 2px #aaa9a9;
+  margin-bottom: 10px;
+}
+.search__icon {
+  padding-top: 1.1rem;
+  font-size: 1rem;
+}
+.search__zonetext {
+  width: 40%;
+  height: 1.1rem;
+  background-color: #e2e2e2;
+  border: none;
+  font-size: 1rem;
+  font-weight: 450;
+  margin-top: 1rem;
+  padding-left: 12px;
+}
+
+.pres {
+  padding: 60px 20px 60px 20px;
+}
+.pres__title {
+  margin: 0px;
+}
+.pres__bloc {
+  display: flex;
+  background: #f1f1f1;
+  box-shadow: 0px 1px 5px #aaa9a9;
+  border-radius: 15px;
+  margin: 20px 0px 20px 0px;
+}
+.pres__nb {
+  color: #fff;
+  background: #9356DC;
+  border-radius: 100%;
+  padding: 5px 10px 5px 10px;
+  justify-content: space-around;
+}
+.pres__text {
+  font-size: 1rem;
+  font-weight: 450;
+}
+
+.intro__btn {
+  background: linear-gradient(172deg, #FF79DA, 45%, #9356DC);
+  color: #fff;
+  width: 14rem;
+  height: 3.2rem;
+  font-size: 1rem;
+  font-weight: 450;
+  border-radius: 100px;
+  border: none;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 0px 1px 5px #aaa9a9;
+}
+.intro__btn:hover {
+  background: #ba80ff;
+  background: #ff80dc;
+  box-shadow: 0px 1px 15px #858585;
+}
+
+/*# sourceMappingURL=styles.css.map */
