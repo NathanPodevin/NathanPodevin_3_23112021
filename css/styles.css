@@ -153,7 +153,7 @@ h1 {
 }
 .resto__card p {
   position: relative;
-  left: 223px;
+  left: 70%;
   margin: -148px 0px 0px 0px;
   padding: 5px 10px 5px 10px;
   background: #99E2D0;
@@ -180,7 +180,7 @@ h1 {
 }
 .resto__text button {
   position: relative;
-  left: 270px;
+  left: 85%;
   bottom: 35px;
   margin-bottom: -10px;
   width: 21px;
