@@ -25,5 +25,38 @@
 }
 
 @mixin resto-card {
-    
+    display: flex;
+    flex-direction: column;
+    background: #FFF;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    @include bloc_shadow;
+    & img {
+        width: 100%;
+        height: 160px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        object-fit: cover;
+    }
+    & p {
+        position: relative;
+        left: 223px;
+        margin: -148px 0px 0px 0px;
+        padding: 5px 10px 5px 10px;
+        background: $color-tertiary;
+        color: darken_clr($color-tertiary);
+        font-weight: 500;
+        width: 65px;
+        border-radius: 3px;
+    }
+    & h3 {
+        margin: 15px 0px 5px 10px;
+        font-size: 1.1rem;
+    }
+    & h4 {
+        margin: 0px 0px 0px 10px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
 }

@@ -5,6 +5,10 @@ body a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, p {
+  color: black;
+}
+
 * {
   font-family: "Roboto", "Arial", "Comic Sans MS", "Georgia", "Trebuchet MS", "Verdena";
 }
@@ -24,7 +28,6 @@ h1 {
 }
 .header__logo h1 {
   font-size: 1.8rem;
-  color: black;
   margin: 15px 0px 0px 0px;
   text-align: center;
 }
@@ -111,7 +114,6 @@ h1 {
   width: 20px;
 }
 .pres__text {
-  color: black;
   font-size: 0.9rem;
   font-weight: 450;
   margin: auto auto auto 0px;
@@ -123,6 +125,74 @@ h1 {
 
 .fa-store {
   font-size: 0.9rem;
+}
+
+.resto {
+  padding: 40px 20px 40px 20px;
+  background: rgba(248, 248, 248, 0.959);
+}
+.resto__title {
+  margin-top: 0px;
+}
+.resto__card {
+  display: flex;
+  flex-direction: column;
+  background: #FFF;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px #c2c1c1;
+}
+.resto__card img {
+  width: 100%;
+  height: 160px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+.resto__card p {
+  position: relative;
+  left: 223px;
+  margin: -148px 0px 0px 0px;
+  padding: 5px 10px 5px 10px;
+  background: #99E2D0;
+  color: #008060;
+  font-weight: 500;
+  width: 65px;
+  border-radius: 3px;
+}
+.resto__card h3 {
+  margin: 15px 0px 5px 10px;
+  font-size: 1.1rem;
+}
+.resto__card h4 {
+  margin: 0px 0px 0px 10px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.resto__card--new h3 {
+  margin-top: 133px;
+}
+.resto__text {
+  display: flex;
+  flex-direction: column;
+}
+.resto__text button {
+  position: relative;
+  left: 270px;
+  bottom: 35px;
+  margin-bottom: -10px;
+  width: 21px;
+  cursor: pointer;
+}
+.resto__text button .fa-heart {
+  font-size: 1.3rem;
+  color: black;
+  font-stretch: expanded;
+}
+.resto__fav {
+  background: none;
+  border: none;
 }
 
 .intro__btn {

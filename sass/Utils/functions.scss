@@ -13,3 +13,11 @@
     $strong_lighten: hsl($hue, $sat, $light);
     @return $strong_lighten;
 }
+
+@function darken_clr ($color){
+    $hue: hue($color);
+    $sat: 100%;
+    $light: 25%;
+    $darken_clr: hsl($hue, $sat, $light);
+    @return $darken_clr;
+}
