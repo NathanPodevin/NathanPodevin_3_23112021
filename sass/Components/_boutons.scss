@@ -1,3 +1,7 @@
 .intro__btn {
     @include bouton_principaux;
 }
+
+.command__btn {
+    @include bouton_principaux;
+}
