@@ -11,10 +11,14 @@
 
 // Layout //
 @import "./Layout/header";
-@import "./Layout/introform";
-@import "./Layout/fonctionnement";
-@import "./Layout/restaurants";
 @import "./Layout/footer";
+@import "./Layout/menu";
+
+// Pages //
+@import "./Pages/introform";
+@import "./Pages/fonctionnement";
+@import "./Pages/restaurants";
 
 // Components //
 @import "./Components/boutons";
+@import "./Components/dishes";

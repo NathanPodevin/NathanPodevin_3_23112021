@@ -19,12 +19,12 @@ h1 {
 
 .header {
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 .header__logo {
-  width: 100%;
+  width: 80%;
 }
 .header__logo h1 {
   font-size: 1.8rem;
@@ -32,9 +32,98 @@ h1 {
   margin: 15px 0px 0px 0px;
   text-align: center;
 }
+.header__back {
+  color: #2e2e2e;
+  font-size: 1.2rem;
+  margin-top: 25px;
+}
+
+.footer {
+  background: #2e2e2e;
+  padding: 30px 0px 20px 20px;
+}
+.footer__title {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0px 0px 20px 0px;
+  font-family: "Shrikhand", "Roboto", "Arial", "Comic Sans MS", "Georgia", "Trebuchet MS", "Verdena";
+}
+.footer__list {
+  padding: 0px;
+  list-style-type: none;
+}
+.footer__list li {
+  margin-bottom: 10px;
+}
+.footer__list a {
+  padding: 0px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.fa-utensils {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.fa-hands-helping {
+  font-size: 0.7rem;
+  margin-right: 10px;
+}
+
+.menu {
+  width: 100%;
+}
+.menu__img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 50px;
+  margin-bottom: -50px;
+  background: #f3f3f3;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  padding: 30px 18px 50px 18px;
+}
+.card__restoname {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.card__restoname h2 {
+  margin: 0px;
+  font-family: "Shrikhand", "Roboto", "Arial", "Comic Sans MS", "Georgia", "Trebuchet MS", "Verdena";
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.card__restoname i {
+  font-size: 1.3rem;
+  color: black;
+  margin-right: 20px;
+}
+.card__title {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 20px 0px 0px 0px;
+  padding-bottom: 4px;
+  font-size: 1rem;
+  border-bottom: 2.5px solid #99E2D0;
+  width: 40px;
+}
+.card .command__btn {
+  align-self: center;
+  margin-top: 40px;
+}
 
 .intro {
-  background-color: rgba(248, 248, 248, 0.959);
+  background-color: #f3f3f3;
 }
 .intro__form {
   text-align: center;
@@ -89,7 +178,7 @@ h1 {
 .pres__bloc {
   display: flex;
   height: 4rem;
-  background: rgba(248, 248, 248, 0.959);
+  background: #f3f3f3;
   box-shadow: 0px 4px 10px #c2c1c1;
   border-radius: 15px;
   margin: 25px 0px 25px 0px;
@@ -130,7 +219,7 @@ h1 {
 
 .resto {
   padding: 40px 20px 40px 20px;
-  background: rgba(248, 248, 248, 0.959);
+  background: #f3f3f3;
 }
 .resto__title {
   margin-top: 0px;
@@ -165,69 +254,35 @@ h1 {
 .resto__card h3 {
   margin: 15px 0px 5px 10px;
   font-size: 1.1rem;
+  width: 100%;
 }
 .resto__card h4 {
   margin: 0px 0px 0px 10px;
   font-size: 1rem;
   font-weight: 400;
+  width: 75%;
 }
 .resto__card--new h3 {
   margin-top: 133px;
 }
 .resto__text {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
 }
 .resto__text button {
-  position: relative;
-  left: 85%;
-  bottom: 35px;
-  margin-bottom: -10px;
-  width: 21px;
+  margin-top: -25px;
+  width: 20%;
   cursor: pointer;
 }
 .resto__text button .fa-heart {
   font-size: 1.3rem;
   color: black;
-  font-stretch: expanded;
 }
 .resto__fav {
   background: none;
   border: none;
-}
-
-.footer {
-  background: #2e2e2e;
-  padding: 30px 0px 20px 20px;
-}
-.footer__title {
-  font-weight: 300;
-  font-size: 1.2rem;
-  color: #fff;
-  margin: 0px 0px 20px 0px;
-  font-family: "Shrikhand", "Roboto", "Arial", "Comic Sans MS", "Georgia", "Trebuchet MS", "Verdena";
-}
-.footer__list {
-  padding: 0px;
-  list-style-type: none;
-}
-.footer__list li {
-  margin-bottom: 10px;
-}
-.footer__list a {
-  padding: 0px;
-  font-weight: 500;
-  color: #fff;
-}
-
-.fa-utensils {
-  font-size: 1rem;
-  margin-right: 10px;
-}
-
-.fa-hands-helping {
-  font-size: 0.7rem;
-  margin-right: 10px;
 }
 
 .intro__btn {
@@ -264,6 +319,35 @@ h1 {
   background: linear-gradient(172deg, #ff80dc, 45%, #ba80ff);
   box-shadow: 0px 1px 15px #858585;
   cursor: pointer;
+}
+
+.dish {
+  display: flex;
+  background: #fff;
+  border-radius: 15px;
+  margin: 8px -5px 8px -5px;
+  box-shadow: 0px 4px 10px #c2c1c1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px 10px 0px 10px;
+}
+.dish__name {
+  font-size: 1rem;
+  margin: 10px 0px 5px 0px;
+  width: 100%;
+}
+.dish__info {
+  font-size: 0.76rem;
+  font-weight: 300;
+  margin: 0px 0px 10px 0px;
+  width: 85%;
+}
+.dish__price {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0px 0px 10px 0px;
+  width: 15%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

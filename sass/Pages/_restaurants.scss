@@ -12,18 +12,16 @@
     }
     &__text {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
         & button {
-            position: relative;
-            left: 85%;
-            bottom: 35px;
-            margin-bottom: -10px;
-            width: 21px;
+            margin-top: -25px;
+            width: 20%;
             cursor: pointer;
             & .fa-heart {
                 font-size: 1.3rem;
                 color: black;
-                font-stretch: expanded;
             }
         }
     }
