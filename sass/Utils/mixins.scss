@@ -1,6 +1,7 @@
 @mixin bouton_principaux {
     background: linear-gradient(172deg, $color-secondary, 45%, $color-primary);
     color: #fff;
+    cursor: pointer;
     width: 14rem;
     height: 3.2rem;
     font-size: 1rem;
@@ -9,10 +10,26 @@
     border: none;
     padding: 10px 10px 10px 10px;
     @include bloc_shadow;
+    position: relative;
+    z-index: 1;
     &:hover {
+        &::after{
+            opacity: 1;
+        }
+    }
+    &::after {
+        content: "";
         background: linear-gradient(172deg, lighten_clr($color: $color-secondary), 45%, lighten_clr($color: $color-primary));
-        box-shadow: 0px 1px 15px rgb(133, 133, 133);
-        cursor: pointer;
+        box-shadow: 0px 1px 15px rgb(196, 196, 196);
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
     }
 }
 

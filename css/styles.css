@@ -288,6 +288,7 @@ h1 {
 .intro__btn {
   background: linear-gradient(172deg, #FF79DA, 45%, #9356DC);
   color: #fff;
+  cursor: pointer;
   width: 14rem;
   height: 3.2rem;
   font-size: 1rem;
@@ -296,16 +297,31 @@ h1 {
   border: none;
   padding: 10px 10px 10px 10px;
   box-shadow: 0px 4px 10px #c2c1c1;
+  position: relative;
+  z-index: 1;
 }
-.intro__btn:hover {
+.intro__btn:hover::after {
+  opacity: 1;
+}
+.intro__btn::after {
+  content: "";
   background: linear-gradient(172deg, #ff80dc, 45%, #ba80ff);
-  box-shadow: 0px 1px 15px #858585;
-  cursor: pointer;
+  box-shadow: 0px 1px 15px #c4c4c4;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 .command__btn {
   background: linear-gradient(172deg, #FF79DA, 45%, #9356DC);
   color: #fff;
+  cursor: pointer;
   width: 14rem;
   height: 3.2rem;
   font-size: 1rem;
@@ -314,11 +330,25 @@ h1 {
   border: none;
   padding: 10px 10px 10px 10px;
   box-shadow: 0px 4px 10px #c2c1c1;
+  position: relative;
+  z-index: 1;
 }
-.command__btn:hover {
+.command__btn:hover::after {
+  opacity: 1;
+}
+.command__btn::after {
+  content: "";
   background: linear-gradient(172deg, #ff80dc, 45%, #ba80ff);
-  box-shadow: 0px 1px 15px #858585;
-  cursor: pointer;
+  box-shadow: 0px 1px 15px #c4c4c4;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
 }
 
 .dish {
