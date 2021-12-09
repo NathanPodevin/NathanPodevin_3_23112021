@@ -3,6 +3,7 @@
     height: 4rem;
     display: flex;
     justify-content: center;
+    z-index: 0;
     &__logo {
         width: 80%;
         & h1 {

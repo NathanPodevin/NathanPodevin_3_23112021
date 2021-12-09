@@ -42,6 +42,10 @@
         font-weight: 450;
         margin-top: 1rem;
         padding-left: 12px;
+        :focus-visible {
+            background: $color-footer;
+            border: solid 1px $color-primary;
+        }
     }
 }
 

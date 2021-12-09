@@ -1,5 +1,29 @@
+@keyframes load-bars {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+    height: 100%;
+  }
+  99% {
+    opacity: 1;
+    height: 100%;
+  }
+  100% {
+    opacity: 0;
+    height: 0%;
+  }
+}
 body {
   margin: 0px;
+  height: 100%;
+  width: 100%;
 }
 body a {
   text-decoration: none;
@@ -17,11 +41,48 @@ h1 {
   font-family: "Shrikhand", "Roboto", "Arial", "Comic Sans MS", "Georgia", "Trebuchet MS", "Verdena";
 }
 
+.load {
+  width: 100%;
+  height: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: absolute;
+  background: #f3f3f3;
+  z-index: 2;
+  opacity: 0;
+  animation: loader 3600ms backwards ease-in-out;
+}
+.load__bar {
+  background: linear-gradient(172deg, #FF79DA, 45%, #9356DC);
+  height: 20%;
+  width: 3vh;
+  margin: 0 10px 0 10px;
+  animation: load-bars 600ms backwards infinite ease-in-out alternate;
+}
+.load__bar--1 {
+  animation-delay: 120ms;
+}
+.load__bar--2 {
+  animation-delay: 240ms;
+}
+.load__bar--3 {
+  animation-delay: 360ms;
+}
+.load__bar--4 {
+  animation-delay: 480ms;
+}
+.load__bar--5 {
+  animation-delay: 600ms;
+}
+
 .header {
   width: 100%;
   height: 4rem;
   display: flex;
   justify-content: center;
+  z-index: 0;
 }
 .header__logo {
   width: 80%;
@@ -167,6 +228,10 @@ h1 {
   font-weight: 450;
   margin-top: 1rem;
   padding-left: 12px;
+}
+.search__zonetext :focus-visible {
+  background: #fff;
+  border: solid 1px #9356DC;
 }
 
 .pres {

@@ -6,4 +6,9 @@ $color-darkbackground: rgb(233, 232, 232);
 $color-shadow: rgb(194, 193, 193);
 $background-footer: rgb(46, 46, 46);
 $color-footer: #fff;
- 
+
+// Loader //
+$bar-size: 3vh;
+$num-bars: 5;
+$anim-dur: 600ms;
+$anim-delay: $anim-dur / $num-bars;

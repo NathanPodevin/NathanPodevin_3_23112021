@@ -116,3 +116,10 @@
     width: 15%;
     text-align: center;
 }
+
+@mixin load_bar {
+    background: linear-gradient(172deg, $color-secondary, 45%, $color-primary);
+    height: 20%;
+    width: $bar-size;
+    margin: 0 10px 0 10px;
+}
