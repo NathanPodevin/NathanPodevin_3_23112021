@@ -11,4 +11,4 @@ $color-footer: #fff;
 $bar-size: 3vh;
 $num-bars: 5;
 $anim-dur: 600ms;
-$anim-delay: $anim-dur / $num-bars;
+$anim-delay: calc($anim-dur / $num-bars);
