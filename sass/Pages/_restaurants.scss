@@ -16,13 +16,35 @@
         flex-wrap: wrap;
         margin-bottom: 15px;
         & button {
-            margin-top: -25px;
+            margin-top: -15px;
             width: 20%;
+            height: 100%;
+            display: flex;
             cursor: pointer;
-            & .fa-heart {
+            align-items: center;
+            justify-content: center;
+            & .fav__border {
                 font-size: 1.3rem;
-                color: black;
+                @include fav_border;
             }
+            &:hover {
+                & > .fav__border {
+                    animation: fav-border 1500ms forwards ease-in-out;
+                }
+            }
+            & .fav__main {
+                font-size: 1.1rem;
+                margin-left: -19.1px;
+                @include fav_main;
+            }
+            &:hover {
+                & > .fav__main {
+                    animation: btn-fav 1500ms forwards ease-in-out;
+                    transform-origin: center bottom;
+                    
+                }
+            }
+
         }
     }
     &__fav {

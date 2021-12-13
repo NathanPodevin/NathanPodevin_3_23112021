@@ -19,16 +19,39 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 5px;
+        padding-right: 5%;
         & h2 {
             margin: 0px;
             font-family: 'Shrikhand','Roboto',"Arial","Comic Sans MS", "Georgia", "Trebuchet MS", "Verdena";
             font-weight: 400;
             font-size: 1.6rem;
         }
-        & i {
-            font-size: 1.3rem;
-            color: black;
-            margin-right: 20px;
+        & button {
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            & .fav__border {
+                @include fav_border;
+                font-size: 1.8rem;
+            }
+            &:hover {
+                & > .fav__border {
+                    animation: fav-border 1500ms forwards ease-in-out;
+                }
+            }
+            & .fav__main {
+                @include fav_main;
+                font-size: 1.6rem;
+                margin-left: -27px;
+            }
+            &:hover {
+                & > .fav__main {
+                    animation: btn-fav 1500ms forwards ease-in-out;
+                    transform-origin: center bottom;
+                    
+                }
+            }
+
         }
     }
     &__title {

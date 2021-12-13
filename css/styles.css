@@ -20,7 +20,46 @@
     height: 0%;
   }
 }
-@keyframes btn-fav {}
+@keyframes btn-fav {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1.4);
+    text-shadow: 0px 0px 5px #FF79DA;
+  }
+  85% {
+    transform: scale(1);
+  }
+  95% {
+    transform: scale(1.4);
+    text-shadow: 0px 0px 5px #FF79DA;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes fav-border {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body {
   margin: 0px;
   height: 100%;
@@ -158,6 +197,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
+  padding-right: 5%;
 }
 .card__restoname h2 {
   margin: 0px;
@@ -165,10 +205,29 @@ h1 {
   font-weight: 400;
   font-size: 1.6rem;
 }
-.card__restoname i {
-  font-size: 1.3rem;
+.card__restoname button {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+.card__restoname button .fav__border {
   color: black;
-  margin-right: 20px;
+  z-index: 1;
+  font-size: 1.8rem;
+}
+.card__restoname button:hover > .fav__border {
+  animation: fav-border 1500ms forwards ease-in-out;
+}
+.card__restoname button .fav__main {
+  color: #FF79DA;
+  z-index: 0;
+  transform: scale(0);
+  font-size: 1.6rem;
+  margin-left: -27px;
+}
+.card__restoname button:hover > .fav__main {
+  animation: btn-fav 1500ms forwards ease-in-out;
+  transform-origin: center bottom;
 }
 .card__title {
   text-transform: uppercase;
@@ -341,13 +400,32 @@ h1 {
   margin-bottom: 15px;
 }
 .resto__text button {
-  margin-top: -25px;
+  margin-top: -15px;
   width: 20%;
+  height: 100%;
+  display: flex;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
-.resto__text button .fa-heart {
+.resto__text button .fav__border {
   font-size: 1.3rem;
   color: black;
+  z-index: 1;
+}
+.resto__text button:hover > .fav__border {
+  animation: fav-border 1500ms forwards ease-in-out;
+}
+.resto__text button .fav__main {
+  font-size: 1.1rem;
+  margin-left: -19.1px;
+  color: #FF79DA;
+  z-index: 0;
+  transform: scale(0);
+}
+.resto__text button:hover > .fav__main {
+  animation: btn-fav 1500ms forwards ease-in-out;
+  transform-origin: center bottom;
 }
 .resto__fav {
   background: none;

@@ -1,5 +1,5 @@
 @mixin bouton_principaux {
-    background: linear-gradient(172deg, $color-secondary, 45%, $color-primary);
+    background: $degrade;
     color: #fff;
     cursor: pointer;
     width: 14rem;
@@ -118,8 +118,23 @@
 }
 
 @mixin load_bar {
-    background: linear-gradient(172deg, $color-secondary, 45%, $color-primary);
+    background: $degrade;
     height: 20%;
     width: $bar-size;
     margin: 0 10px 0 10px;
+}
+
+@mixin fav_border {
+    color: black;
+    z-index: 1;
+}
+
+@mixin fav_main {
+    color: $color-secondary;
+    z-index: 0;
+    transform: scale(0);
+}
+
+@mixin fav_shadow {
+    text-shadow: 0px 0px 5px $color-secondary;
 }
