@@ -96,6 +96,23 @@
     width: 40px;
 }
 
+@mixin dish {
+    display: flex;
+    background: $color-footer;
+    border-radius: 15px;
+    margin: 8px -5px 8px -5px;
+    @include bloc_shadow;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 10px;
+    animation: anim-dish 1000ms backwards cubic-bezier(1,.01,.32,.72);
+    @for $i from 1 through $num-dish {
+        &--#{$i} {
+            animation-delay: $dish-delay * $i;
+         }
+    }
+}
+
 @mixin dish_name {
     font-size: 1rem;
     margin: 10px 0px 5px 0px;
@@ -137,4 +154,16 @@
 
 @mixin fav_shadow {
     text-shadow: 0px 0px 5px $color-secondary;
+}
+
+@mixin dish_check {
+    color: $color-footer;
+    background: $color-tertiary;
+    font-size: 1.8rem;
+    width: 25%;
+    display: none;
+    border-radius: 0px 15px 15px 0px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -34.2px;
 }

@@ -1,12 +1,5 @@
 .dish {
-    display: flex;
-    background: $color-footer;
-    border-radius: 15px;
-    margin: 8px -5px 8px -5px;
-    @include bloc_shadow;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0px 10px 0px 10px;
+    @include dish;
     &__name {
         @include dish_name;
     }
@@ -16,4 +9,21 @@
     &__price {
         @include dish_price
     }
+    &:hover .dish__name{
+        width: 75%;
+    }
+    &:hover .dish__info{
+        width: 60%;
+    }
+    &:hover .dish__price{
+        width: 15%;
+    }
+    &:hover .dish__check{
+        display: flex;
+        transform-origin: center bottom;
+    }
+}
+
+.fas.dish__check {
+    @include dish_check;
 }

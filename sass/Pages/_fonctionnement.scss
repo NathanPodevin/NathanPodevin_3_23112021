@@ -10,12 +10,13 @@
         @include bloc_shadow;
         border-radius: 15px;
         margin: 25px 0px 25px 0px;
+        &:hover i {
+            color: $color-primary;
+        }
         &:hover {
             background: strong_lighten($color: $color-primary);
-            & i:hover{
-                color: $color-primary;
-            }
         }
+        
     }
     &__nb {
         color: #fff;

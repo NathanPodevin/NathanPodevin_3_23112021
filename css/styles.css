@@ -60,6 +60,16 @@
     opacity: 0;
   }
 }
+@keyframes anim-dish {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 body {
   margin: 0px;
   height: 100%;
@@ -311,11 +321,11 @@ h1 {
   border-radius: 15px;
   margin: 25px 0px 25px 0px;
 }
+.pres__bloc:hover i {
+  color: #9356DC;
+}
 .pres__bloc:hover {
   background: #f1e6ff;
-}
-.pres__bloc:hover i:hover {
-  color: #9356DC;
 }
 .pres__nb {
   color: #fff;
@@ -506,7 +516,38 @@ h1 {
   box-shadow: 0px 4px 10px #c2c1c1;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 0px 0px 10px;
+  animation: anim-dish 1000ms backwards cubic-bezier(1, 0.01, 0.32, 0.72);
+}
+.dish--1 {
+  animation-delay: 200ms;
+}
+.dish--2 {
+  animation-delay: 400ms;
+}
+.dish--3 {
+  animation-delay: 600ms;
+}
+.dish--4 {
+  animation-delay: 800ms;
+}
+.dish--5 {
+  animation-delay: 1000ms;
+}
+.dish--6 {
+  animation-delay: 1200ms;
+}
+.dish--7 {
+  animation-delay: 1400ms;
+}
+.dish--8 {
+  animation-delay: 1600ms;
+}
+.dish--9 {
+  animation-delay: 1800ms;
+}
+.dish--10 {
+  animation-delay: 2000ms;
 }
 .dish__name {
   font-size: 1rem;
@@ -525,6 +566,31 @@ h1 {
   margin: 0px 0px 10px 0px;
   width: 15%;
   text-align: center;
+}
+.dish:hover .dish__name {
+  width: 75%;
+}
+.dish:hover .dish__info {
+  width: 60%;
+}
+.dish:hover .dish__price {
+  width: 15%;
+}
+.dish:hover .dish__check {
+  display: flex;
+  transform-origin: center bottom;
+}
+
+.fas.dish__check {
+  color: #fff;
+  background: #99E2D0;
+  font-size: 1.8rem;
+  width: 25%;
+  display: none;
+  border-radius: 0px 15px 15px 0px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -34.2px;
 }
 
 /*# sourceMappingURL=styles.css.map */
