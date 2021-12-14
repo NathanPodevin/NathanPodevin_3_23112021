@@ -11,7 +11,7 @@ $degrade: linear-gradient(172deg, $color-secondary, 45%, $color-primary);
 // Loader //
 $bar-size: 3vh;
 $num-bars: 5;
-$anim-dur: 600ms;
+$anim-dur: 400ms;
 $anim-delay: calc($anim-dur / $num-bars);
 
 // Dish //

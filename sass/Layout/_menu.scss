@@ -47,8 +47,7 @@
             &:hover {
                 & > .fav__main {
                     animation: btn-fav 1500ms forwards ease-in-out;
-                    transform-origin: center bottom;
-                    
+                    transform-origin: center bottom; 
                 }
             }
 

@@ -10,17 +10,24 @@
         @include dish_price
     }
     &:hover .dish__name{
-        width: 75%;
+        width: 60%;
     }
     &:hover .dish__info{
         width: 60%;
     }
     &:hover .dish__price{
         width: 15%;
+        transform-origin: center right;
+        animation: dish-price 500ms both ease-in-out;
     }
     &:hover .dish__check{
         display: flex;
-        transform-origin: center bottom;
+        transform-origin: center right;
+        animation: dish-check 500ms both ease-in-out;
+    }
+    &:hover .fa-check-circle:before{
+        transform-origin: center;
+        animation: check-rotate 500ms both ease-in-out;
     }
 }
 
