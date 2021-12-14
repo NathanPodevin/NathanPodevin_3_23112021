@@ -1,3 +1,16 @@
+@media screen and (min-width: 600px)
+{
+    body .footer {
+        text-align: center;
+        &__title {
+            font-size: 2rem;
+        }
+        & li {
+            font-size: 1.2rem;
+        }
+    }
+}
+
 .footer {
     background: $background-footer;
     padding: 30px 0px 20px 20px;

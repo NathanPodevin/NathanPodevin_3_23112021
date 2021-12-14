@@ -1,3 +1,29 @@
+@media screen and (min-width: 600px)
+{
+    main .resto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &__title {
+            width: 100%;
+        }
+        &__card {
+            width: 45%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    main .resto {
+        &__card {
+            & p {
+                left: 80%;
+            }
+        }
+    }
+}
+
 .resto {
     padding: 40px 20px 40px 20px;
     background: $color-background;
@@ -18,7 +44,6 @@
         & button {
             margin-top: -15px;
             width: 20%;
-            height: 100%;
             display: flex;
             cursor: pointer;
             align-items: center;
