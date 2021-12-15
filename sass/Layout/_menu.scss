@@ -1,3 +1,37 @@
+@media screen and (min-width: 600px)
+{
+    main .card {
+        bottom: 40px;
+        &__restoname {
+            justify-content: center;
+            padding-right: 0%;
+            & h2 {
+            font-size: 2rem;
+            margin-right: 25px;
+            }
+        }
+        &__title {
+            font-size: 1.5rem;
+            width: 60px;
+            margin-bottom: 15px;
+        }
+    }
+    main .dish {
+        &__name {
+            font-size: 1.2rem;
+        }
+        &__info {
+            font-size: 1rem;
+        }
+        &__price {
+            font-size: 1rem;
+        }
+        & .fas.dish__check {
+            margin-top: -38.2px;
+        }
+    }
+}
+
 .menu {
     width: 100%;
     &__img {

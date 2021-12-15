@@ -226,6 +226,37 @@ h1 {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 600px) {
+  main .card {
+    bottom: 40px;
+  }
+  main .card__restoname {
+    justify-content: center;
+    padding-right: 0%;
+  }
+  main .card__restoname h2 {
+    font-size: 2rem;
+    margin-right: 25px;
+  }
+  main .card__title {
+    font-size: 1.5rem;
+    width: 60px;
+    margin-bottom: 15px;
+  }
+
+  main .dish__name {
+    font-size: 1.2rem;
+  }
+  main .dish__info {
+    font-size: 1rem;
+  }
+  main .dish__price {
+    font-size: 1rem;
+  }
+  main .dish .fas.dish__check {
+    margin-top: -38.2px;
+  }
+}
 .menu {
   width: 100%;
 }
@@ -299,7 +330,7 @@ h1 {
 @media screen and (min-width: 600px) {
   main .search__zonetext {
     text-align: center;
-    width: 30%;
+    width: 20%;
   }
 }
 .intro {
@@ -593,7 +624,6 @@ h1 {
   border-radius: 15px;
   margin: 8px -5px 8px -5px;
   box-shadow: 0px 4px 10px #c2c1c1;
-  flex-direction: row;
   flex-wrap: wrap;
   padding: 0px 0px 0px 10px;
   animation: anim-dish 1000ms backwards cubic-bezier(1, 0.01, 0.32, 0.72);
