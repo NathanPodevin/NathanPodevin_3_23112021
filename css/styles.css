@@ -520,7 +520,7 @@ h1 {
   flex-wrap: wrap;
   margin-bottom: 15px;
 }
-.resto__text button {
+.resto__text .resto__fav {
   margin-top: -15px;
   width: 20%;
   display: flex;
@@ -528,22 +528,22 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-.resto__text button .fav__border {
+.resto__text .resto__fav .fav__border {
   font-size: 1.3rem;
   color: black;
   z-index: 1;
 }
-.resto__text button:hover > .fav__border {
+.resto__text .resto__fav:hover > .fav__border {
   animation: fav-border 1500ms forwards ease-in-out;
 }
-.resto__text button .fav__main {
+.resto__text .resto__fav .fav__main {
   font-size: 1.1rem;
   margin-left: -19.1px;
   color: #FF79DA;
   z-index: 0;
   transform: scale(0);
 }
-.resto__text button:hover > .fav__main {
+.resto__text .resto__fav:hover > .fav__main {
   animation: btn-fav 1500ms forwards ease-in-out;
   transform-origin: center bottom;
 }
