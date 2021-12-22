@@ -518,10 +518,15 @@ h1 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+.resto__text a {
+  width: 80%;
 }
 .resto__text .resto__fav {
-  margin-top: -15px;
+  margin-top: auto;
+  margin-left: auto;
+  padding-bottom: 15px;
   width: 20%;
   display: flex;
   cursor: pointer;
