@@ -40,9 +40,14 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+        & a {
+            width: 80%;
+        }
         & .resto__fav {
-            margin-top: -15px;
+            margin-top: auto;
+            margin-left: auto;
+            padding-bottom: 15px;
             width: 20%;
             display: flex;
             cursor: pointer;
